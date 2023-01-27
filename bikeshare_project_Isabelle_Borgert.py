@@ -19,7 +19,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington) and capitalize the first letter
     while True:
         try:
             city = input('Would you like to analyze "Chicago", "New York City" or "Washington"? Please type out the city name:\n').title()
@@ -35,7 +35,7 @@ def get_filters():
             print('You selected: ', city)
             break
 
-    # get user input for month (all, january, february, ... , june) and check whether he made a valid entry
+    # get user input for month (all, january, february, ... , june) and capitalize the first letter
     while True:
         try:
             month = input('Which month would you like to analyze? Please type "Jan", "Feb", "Mar", "May", "Jun", "Jul", or type "None" for no month-filter.\n').title()
@@ -51,11 +51,11 @@ def get_filters():
             print('You selected: ', month)
             break
 
-    # get user input for day of week (all, monday, tuesday, ... sunday) and check whether he made a valid entry
+    # get user input for day of week (all, monday, tuesday, ... sunday) and capitalize the first letter
     while True:
         try:
             day_input = input('Which day of the week would you like to analyze? Type "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su" or "None" for no day-filter:\n').title()
-
+        # Check whether the user made valid input for the weekday
         except ValueError:
             print('Please type out the day as specified above')
             continue
@@ -247,7 +247,7 @@ def main():
                 repeat = input('\nWould you like to see the next 5 lines of code?\n')
 
 
-
+        # Ask the user if he wants to run a new analysis with new input or quit the analysis
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
