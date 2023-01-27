@@ -18,3 +18,10 @@ chicago.csv [NOT uploaded]
 ### Credits
 https://udacity.com/
 
+### Known Bugs
+None
+
+### User Input
+Selection of city: Washington, Chicago, New York City
+Selection of month: Jan, Feb, Mar, Apr, May, Jun, Jul
+Selection of weekday: Mo, Tu, We, Th, Fr, Sa, Su
