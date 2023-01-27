@@ -1,17 +1,20 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+2023.01.27
 
 ### Project Title
-Replace the Project Title
+Bikeshare Git Project
 
 ### Description
-Describe what your project is about and what it does
+This project will publish the bikeshare project to GitHub. The Bikeshare project is a python-script, in which a user can analyse a dataset for e-bikes in the US, with interactive input. The analysis that is calculated based on the input will contain several statistical information, for example the average travel time, the most popular starting hour for rides and the most common start- and end-stations.
 
 ### Files used
-Include the files used
+bikeshare.py
+washington.csv [NOT uploaded]
+new_york_city.csv [NOT uploaded]
+chicago.csv [NOT uploaded]
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://udacity.com/
 
