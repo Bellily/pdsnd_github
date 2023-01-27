@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'Chicago' : 'chicago.csv' ,
               'New York City' : 'new_york_city.csv',
@@ -150,14 +149,14 @@ def station_stats(df):
 
     # display most commonly used start station
     start_station = df['Start Station'].mode()[0]
-    print('\n Most people started at the station:', start_station)
+    print('\n Most people started at the station: {}'.format(start_station))
     # display most commonly used end station
     end_station = df['End Station'].mode()[0]
-    print('\n Most people ended their ride at the station:', end_station)
+    print('\n Most people ended their ride at the station: {}'.format(end_station))
 
     # display most frequent combination of start station and end station trip
     start_end_combination = df.groupby(['Start Station', 'End Station']).size().idxmax()
-    print('\n Most common combination:', start_end_combination)
+    print('\n Most common combination was the start station \"{}\" with the end station \"{}\" .'.format(start_end_combination[0], start_end_combination[1]))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -234,7 +233,7 @@ def main():
         user_stats(df)
 
         # Ask the suer if he want's to see the first 5 lines of code
-        raw_data = input('\nWould you like to see the first 5 lines of code?').lower()
+        raw_data = input('\nWould you like to see the first 5 lines of code?\n').lower()
         if raw_data == 'yes':
             i=5
             print(df.iloc[:i])
